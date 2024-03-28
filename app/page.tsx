@@ -115,7 +115,7 @@ export default function Home() {
                   <li>- Social Media Management & Community Management</li>
                   <li>- Publicités en ligne (Meta Ads, LinkedIn Ads)</li>
                   <li>- Création de contenus graphiques digitaux (Suite Adobe, Canva, ...)</li>
-                  <li>- Formation d'étudiants au Marketing Digital dans différents organismes (Université de Franche-Comté, Formagraph Design, ESTM Pigier, Senza Formations, ...)</li>
+                  <li>- Formation d&apos;étudiants au Marketing Digital dans différents organismes (Université de Franche-Comté, Formagraph Design, ESTM Pigier, Senza Formations, ...)</li>
                 </ul>
               </div>
             </div>
@@ -185,8 +185,8 @@ export default function Home() {
             </div>
         </section>
         <section id={styles.aichatsection}>
-          <h2>D'autres questions ?</h2>
-          <p>Mon clone créé par l'intelligence artificielle pourra répondre à vos questions !</p>
+          <h2>D&apos;autres questions ?</h2>
+          <p>Mon clone créé par l&apos;intelligence artificielle pourra répondre à vos questions !</p>
           <AiChat/>
         </section>
       </main>

@@ -47,7 +47,7 @@ export function Avatar(props: JSX.IntrinsicElements['group']) {
 
   useEffect(() => {
     actions[animation]?.play();
-  }, [])
+  }, [actions, animation])
 
   return (
     <group {...props} dispose={null} ref={group}>
