@@ -1,0 +1,98 @@
+#aichat{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    aspect-ratio: 16/9;
+    height: auto;
+    width: 60vw;
+    background-color: var(--lightblack);
+    overflow: hidden;
+    border-radius: var(--radius);
+    color: var(--white);
+    border: var(--border);
+}
+
+#avatar, #chat{
+    width: 50%;
+}
+
+#avatar{
+    border-right: var(--border);
+}
+
+#chat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+
+#messageslist{
+    width: 100%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    overflow: scroll;
+}
+
+.message{
+    max-width: 75%;
+    border: var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    background-color: var(--lighterblack);
+    line-height: 1.5rem;
+    font-family: var(--font-second);
+    font-weight: 300;
+}
+
+.aimessage{
+    place-self: start;
+}
+
+.usermessage{
+    place-self: end;
+}
+
+#form{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+}
+
+#form label{
+    display: none;
+}
+
+#form input{
+    border-radius: 5px;
+    border: var(--border);
+    background-color: var(--lighterblack);
+    padding: 0.25rem 0.5rem;
+    flex-grow: 1;
+    outline: none;
+    color: var(--white);
+}
+
+#form button{
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: var(--border);
+    transition: all 0.2s;
+    outline: none;
+}
+
+#form button:hover{
+    background-color: var(--grey);
+}
