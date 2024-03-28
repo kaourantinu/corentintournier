@@ -17,7 +17,7 @@ const MessageForm = () => {
   return (
     <form id={styles.form} onSubmit={handleSubmit}>
         <label htmlFor="content">Your message</label>
-        <input name="content" placeholder="Posez votre question ici..." value={content} autoFocus autoComplete="off" onChange={(e: any) => setContent(e.target.value)}/>
+        <input name="content" placeholder="Posez votre question ici..." value={content} autoComplete="off" onChange={(e: any) => setContent(e.target.value)}/>
         <button type="submit"><IoIosSend/></button>
     </form>
   )

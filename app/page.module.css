@@ -331,3 +331,105 @@
     background-color: var(--black);
     padding: 4rem;
 }
+
+@media screen and (max-width: 767px){
+    #herosection{
+        padding-top: 7rem;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    #infodiv{
+        width: 100%;
+    }
+    
+    #devtitle{
+        letter-spacing: -1px;
+        font-size: 1.5rem;
+        margin-bottom: -0.75rem;
+    }
+    
+    #nametitle{
+        font-size: 2.75rem;
+        letter-spacing: -1px;
+    }
+    
+    #icondiv{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        row-gap: 1rem;
+    }
+    
+    #photodiv{
+        position: relative;
+        height: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    #photodiv img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0rem;
+        padding: 0;
+    }
+    
+    #photooverlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.10);
+    }
+    
+    #stacksection h2{
+        text-align: center;
+    }
+    
+    #stackbentos{
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+        row-gap: 2rem;
+    }
+    
+    .stackbento{
+        width: 100%;
+    }
+    
+    #expsection h2{
+        text-align: center;
+    }
+    
+    .expdiv{
+        width: 100%;
+    }
+    
+    #headerschool{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 2rem 0rem 2rem;
+        column-gap: 3rem;
+    }
+
+    #headerschool h3{
+        margin-bottom: 1rem;
+    }
+
+    #headerschool p{
+        line-height: 1.5rem;
+    }
+    
+    #schooldiv{
+        width: 100%;
+
+    }
+
+    #aichatsection p{
+        text-align: center;
+    }
+}

@@ -96,3 +96,64 @@
 #form button:hover{
     background-color: var(--grey);
 }
+
+@media screen and (max-width: 767px){
+    #aichat{
+        width: 85%;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        aspect-ratio: auto;
+        height: auto;
+    }
+    
+    #avatar, #chat{
+        width: 100%;
+    }
+
+    #avatar{
+        height: 30vh;
+    }
+    
+    #chat{
+        padding: 1rem;
+        font-size: 0.6rem;
+    }
+    
+    #messageslist{
+        display: flex;
+        max-height: 20vh;
+        flex-direction: column;
+        row-gap: 2rem;
+        overflow: scroll;
+        margin-bottom: 1rem;
+    }
+    
+    .message{
+        padding: 0.5rem 0.75rem;
+        line-height: 1.4rem;
+        border-radius: 5px;
+    }
+    
+    #form{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        column-gap: 0.5rem;
+    }
+    
+    #form label{
+        display: none;
+    }
+    
+    #form input{
+        border-radius: 5px;
+        border: var(--border);
+        background-color: var(--lighterblack);
+        padding: 0.15rem 0.5rem;
+        flex-grow: 1;
+        outline: none;
+        color: var(--white);
+        font-size: 0.6rem;
+    }
+}
