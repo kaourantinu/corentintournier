@@ -365,7 +365,9 @@
     #photodiv{
         position: relative;
         height: 100%;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+        border: none;
+        background-color: transparent;
     }
     
     #photodiv img{
@@ -373,6 +375,7 @@
         height: 100%;
         margin-bottom: 0rem;
         padding: 0;
+        border-radius: var(--radius);
     }
     
     #photooverlay{
@@ -382,6 +385,10 @@
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.10);
+    }
+
+    #stacksection{
+        padding: 6rem 4rem 4rem 4rem;
     }
     
     #stacksection h2{

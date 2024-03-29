@@ -1,6 +1,7 @@
 import Image from "next/image";
 import AiChat from "./components/AiChat/AiChat";
 import styles from './page.module.css'
+import styles2 from './components/RealisationSection/RealisationSection.module.css'
 import Link from "next/link";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
@@ -29,13 +30,13 @@ export default function Home() {
         <nav>
           <ul>
             <li><Link href={`/#${styles.stacksection}`}>Technologies</Link></li>
-            <li><Link href="/#realisationsection">Réalisations</Link></li>
+            <li><Link href={`/#${styles2.realisationsection}`}>Réalisations</Link></li>
             <li><Link href={`/#${styles.expsection}`}>Expériences</Link></li>
             <li><Link href={`/#${styles.schoolsection}`}>Diplôme</Link></li>
             <li><Link href={`/#${styles.aichatsection}`}>Des questions ?</Link></li>
           </ul>
         </nav>
-        <Link href='' className='whitebutton'>Me contacter</Link>
+        <Link href='mailto:corentin.tournier@outlook.fr' className='whitebutton'>Me contacter</Link>
       </header>
       <main>
         <section id={styles.herosection}>
@@ -58,7 +59,6 @@ export default function Home() {
           <div id={styles.photodiv}>
             <Image src='/corentin-tournier-développeur-web-freelance.jpg' width={500} height={500} alt="" priority/>
             <div id={styles.photooverlay}></div>
-            
           </div>
         </section>
         <section id={styles.stacksection}>
