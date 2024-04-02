@@ -45,7 +45,6 @@ export function MessagesProvider({ children }: { children: ReactNode }) {
       }
       
       setMessages([systemMessage, welcomeMessage])
-      console.log('chat initialized')
     }
     // When no messages are present, we initialize the chat the system message and the welcome message
     // We hide the system message from the user in the UI
