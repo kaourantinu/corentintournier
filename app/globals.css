@@ -38,7 +38,7 @@ header{
   background-color: rgba(0,0,0,.8);
   -webkit-backdrop-filter: saturate(180%) blur(5px);
   backdrop-filter: saturate(180%) blur(5px);
-  z-index: 2;
+  z-index: 20;
 }
 
 header span{
