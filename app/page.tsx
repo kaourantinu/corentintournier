@@ -17,6 +17,7 @@ import { FaFigma } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdPin } from "react-icons/io";
+import { IoLogoGithub } from "react-icons/io";
 import RealisationSection from "./components/RealisationSection/RealisationSection";
 
 export default function Home() {
@@ -52,6 +53,7 @@ export default function Home() {
               <Link href='mailto:corentin.tournier@outlook.fr' className={styles.iconlink}><IoIosMail size='1.25rem'/>corentin.tournier@outlook.fr</Link>
               <Link href='tel:+33761413061' className={styles.iconlink}><FaPhoneAlt size='1rem'/>07 61 41 30 61</Link>
               <Link href='https://www.linkedin.com/in/corentin-tournier/' className={styles.iconlink}><FaLinkedinIn size='1rem'/>Corentin Tournier</Link>
+              <Link href='https://github.com/kaourantinu/' className={styles.iconlink}><IoLogoGithub size='1rem'/>kaourantinu</Link>
             </div>
           </div>
           <div id={styles.photodiv}>

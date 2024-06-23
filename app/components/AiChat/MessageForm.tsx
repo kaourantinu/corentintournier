@@ -6,8 +6,11 @@ import styles from './AiChat.module.css'
 import { IoIosSend } from "react-icons/io";
 
 const MessageForm = () => {
+
   const [content, setContent] = useState('')
+
   const { addMessage } = useMessages()
+  
   const handleSubmit = async (e: any) => {
     e?.preventDefault()
     addMessage(content)

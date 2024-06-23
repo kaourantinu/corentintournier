@@ -13,7 +13,6 @@ const MessagesList = () => {
   useEffect(() => {
     const messagesList = messagesListRef.current;
     if (messagesList) {
-      // Faire défiler automatiquement vers le bas lorsque de nouveaux messages sont ajoutés
       messagesList.scrollTop = messagesList.scrollHeight;
     }
   }, [messages]);

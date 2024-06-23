@@ -46,8 +46,7 @@ export function MessagesProvider({ children }: { children: ReactNode }) {
       
       setMessages([systemMessage, welcomeMessage])
     }
-    // When no messages are present, we initialize the chat the system message and the welcome message
-    // We hide the system message from the user in the UI
+
     if (!messages?.length) {
       initializeChat()
     }
@@ -61,7 +60,7 @@ export function MessagesProvider({ children }: { children: ReactNode }) {
         content: content,
       }
       const newMessages = [...messages, newMessage]
-      // Add the user message to the state so we can see it immediately
+
       setMessages(newMessages)
 
       const completion = await sendMessage(newMessages);
@@ -71,7 +70,6 @@ export function MessagesProvider({ children }: { children: ReactNode }) {
       setMessages([...newMessages, chatResponse]);  
       
     } catch (error) {
-      // Show error when something goes wrong
       console.log(error)
     } finally {
       setIsLoadingAnswer(false)
